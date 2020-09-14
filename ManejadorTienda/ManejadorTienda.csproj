@@ -35,5 +35,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoDatosTienda\AccesoDatosTienda.csproj">
+      <Project>{afe1f80f-1b26-45e6-82fe-21c7a874ed50}</Project>
+      <Name>AccesoDatosTienda</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntidadesTienda\EntidadesTienda.csproj">
+      <Project>{32484ed0-62aa-4ebc-ba2f-2c816a91ff6b}</Project>
+      <Name>EntidadesTienda</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ManejadorProductos.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
