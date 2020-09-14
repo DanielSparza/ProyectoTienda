@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AccesoDatosTienda
+namespace EntidadesTienda
 {
     class Program
     {
-        static void Main()
-        {
-
-        }
     }
 }

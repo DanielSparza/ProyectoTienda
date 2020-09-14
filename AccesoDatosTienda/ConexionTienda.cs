@@ -1,12 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Bases;
+using System.Data;
 
 namespace AccesoDatosTienda
 {
-    class ConexionTienda
+    public class ConexionTienda
     {
+        Conectar c = new Conectar("localhost", "root", "1234567890", "Tienda");
+
+        //Metodo para insertar, eliminar, modificar
+        public string Comando(string q)
+        {
+            return c.Comando(q);
+        }
+
+        //Metodo para consultar
+        public DataSet Mostrar(string q, string tabla)
+        {
+            return c.Consultar(q, tabla);
+        }
     }
 }
