@@ -14,7 +14,7 @@ namespace PresentacionTienda
 
         public FrmProductosAdd()
         {
-
+            InitializeComponent();
         }
 
         public FrmProductosAdd(EntidadProducto producto)
